@@ -1,0 +1,18 @@
+<html>
+<head>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css">
+    <title>profile</title>
+</head>
+<body>
+<% include partials/ref.ejs %>
+<h1>This is profile page of <%=name%></h1>
+<h3>age : <%=data.age%></h3>
+<h3>job : <%=data.job%></h3>
+<h2>hobbies</h2>
+<ul>
+<% data.hobbies.forEach(function(item){ %>
+   <li> <%= item%></li>
+<% });%>
+</ul>
+</body>
+</html>
